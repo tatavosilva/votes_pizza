@@ -1,0 +1,26 @@
+
+<h2> Vota por tu mejor opcion </h2>
+<div class= "maker-container">
+
+<% @makers.each do |maker| %>
+  <div class= "maker" id= <%= maker.id%> >
+    <div class= "left">
+        <p><%= maker.nombre%><p>
+        <p><%= maker.apellido%><p>
+    </div>
+    <div class= "right">
+        <h4>Cantidad de votos</h4>
+        <p>
+            <%if maker.votes%>
+                <%= maker.votes.count%>
+            <% else %>
+                0
+            <%end%>
+        </p>
+    </div>
+  </div>
+<% end %>
+</div>
+<script>
+    new MakersIndex()
+</script>

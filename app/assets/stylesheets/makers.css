@@ -1,0 +1,22 @@
+.maker-container{
+    width: 90%;
+    min-height: 100%;
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.maker{
+    width: 180px;
+    height: 140px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.maker .left,
+.maker .right{
+    width: 45%;
+}
